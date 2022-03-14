@@ -1,10 +1,13 @@
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import { Header } from "./components/Header";
+import Router from "./router/Router";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Aegis Store</h1>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Router />
+    </BrowserRouter>
   );
 }
 
